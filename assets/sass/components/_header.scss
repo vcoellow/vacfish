@@ -1,0 +1,219 @@
+header {
+	&.header,
+	&.headerScroll {
+		width: 100%;
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+		.container {
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			justify-content: space-between;
+			.logo {
+				width: 150px;
+				height: 170px;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background: $white;
+				z-index: 999;
+				a {
+					img {
+						height: 100px;
+					}
+				}
+			}
+			nav {
+				display: inline-flex;
+				z-index: 999;
+				ul {
+					display: flex;
+					flex-flow: row wrap;
+					justify-content: flex-end;
+					li {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin-left: 40px;
+						a {
+							display: flex;
+							align-items: center;
+							letter-spacing: 1px;
+							text-transform: uppercase;
+							font-family: "Gotham Ultra";
+							font-size: 14px;
+							color: $white;
+							i {
+								width: 50px;
+								height: 50px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								z-index: 999;
+								background: $white;
+								border-radius: 100%;
+								font-size: 24px;
+								color: $blue;
+							}
+							span {
+								display: flex;
+								align-items: center;
+								margin-left: -30px;
+								padding: 5px 10px 5px 40px;
+								border: 3px solid $white;
+								border-radius: 20px;
+							}
+							&:hover {
+								color: $lightBlue;
+								i {
+									background: $lightBlue;
+									color: $white;
+									transition: .3s ease-in;
+								}
+								span {
+									background: $lightBlue;
+									border: 3px solid $lightBlue;
+									color: $white;
+									transition: .3s ease-in;
+								}
+							}
+						}
+					}
+				}
+				&.navbar {
+					display: none;
+				}
+			}
+		}
+		@media (max-width: 991px) {
+			.container {
+				.logo {
+					width: 100px;
+					height: 130px;
+					img {
+						height: 70px;
+					}
+				}
+				nav {
+					ul {
+						li {
+							margin-left: 20px;
+							a {
+								font-size: 12px;
+								i {
+									width: 30px;
+									height: 30px;
+									font-size: 16px;
+								}
+								span {
+									padding: 0 15px 0 40px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			.container {
+				width: 100%;
+				max-width: 100%;
+				position: absolute;
+				z-index: 999;
+				background: $white;
+				.logo {
+					display: none;
+				}
+				nav {
+					display: none;
+					&.navbar {
+						width: 100%;
+						display: flex;
+						flex-flow: row wrap;
+						align-items: center;
+						padding: 0;
+						position: relative;
+						.navbar-brand {
+							width: 70px;
+							height: 100px;
+							display: inline-flex;
+							align-items: center;
+							justify-content: center;
+							margin: 0;
+							padding: 0;
+							background: $white;
+							img {
+								height: 50px;
+							}
+						}
+						.navbar-toggler {
+							position: absolute;
+							top: 35px;
+							right: 0;
+							border: 1px solid $lightBlue;
+							i {
+								color: $lightBlue;
+							}
+						}
+						.navbar-collapse {
+							ul {
+								max-height: calc(100vh - 50px)!important;
+								flex-flow: column wrap;
+								background: $white;
+								li {
+									margin-bottom: 15px;
+									margin-left: 0;
+									a {
+										font-size: 14px;
+										color: $lightBlue;
+										&:hover {
+											color: $blue;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.headerScroll {
+		background: $white;
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .1);
+		transition: .2s all;
+		.container {
+			.logo {
+				height: auto;
+				padding: 20px 0;
+				transition: .2s all;
+				a {
+					img {
+						height: 50px;
+						transition: .2s all;
+					}
+				}
+			}
+			nav {
+				ul {
+					li {
+						a {
+							color: $blue;
+							transition: .2s all;
+							i {
+								background: $blue;
+								color: $white;
+								transition: .2s all;
+							}
+							span {
+								border: 3px solid $blue;
+								transition: .2s all;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import "../css/fonts.css";
+@import "components/vars";
+@import "components/header";
+@import "components/home";
+@import "components/quienes-somos";
+@import "components/servicios";
+@import "components/contacto";
+@import "components/blog";
+@import "components/single-blog";
+@import "components/aside";
+@import "components/footer";
+
+/*DEFAULT*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*:focus {
+	border: none;
+	box-shadow: none;
+	outline: none !important;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: $white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	transition: .3s ease-in-out;
+	&:hover {
+		text-decoration: none;
+		cursor: pointer;
+		transition: .3s ease-in;
+	}
+}
+ul {
+	margin: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	}
+}
+button {
+	border: none;
+	-webkit-appearance: none;
+}
+img {
+	width: 100%;
+}
+/**/

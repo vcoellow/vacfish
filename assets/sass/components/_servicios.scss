@@ -1,0 +1,150 @@
+.bannerServices {
+	height: 400px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		object-fit: cover;
+	}
+	.containerTitle {
+		width: 100%;
+		max-width: 1140px;
+		display: flex;
+		flex-flow: column wrap;
+		align-items: flex-end;
+		margin: 0 auto;
+		padding: 0 15px;
+		position: absolute;
+		right: 0;
+		bottom: 50px;
+		left: 0;
+		h1 {
+			display: inline-block;
+			text-align: right;
+			text-transform: uppercase;
+			font-family: "Gotham Ultra";
+			font-size: 60px;
+			color: $white;
+		}
+	}
+	@media (max-width: 1199px) {
+		.containerTitle {
+			max-width: 960px;
+		}
+	}
+	@media (max-width: 991px) {
+		.containerTitle {
+			max-width: 720px;
+			h1 {
+				font-size: 50px;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		align-items: center;
+		.containerTitle {
+			max-width: 540px;
+			justify-content: center;
+			top: 0;
+			bottom: 0;
+			h1 {
+				margin: 0 auto;
+				right: 0;
+				left: 0;
+				text-align: center;
+				font-size: 30px;
+			}
+		}
+	}
+	@media (max-width: 575px) {
+		.containerTitle {
+			max-width: 300px;
+		}
+	}
+}
+.sliderServicios {
+	width: 100%;
+	height: 400px;
+	.swiper-slide {
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.swiper-pagination-bullets {
+		right: 20px;
+		left: inherit !important;
+		text-align: right;
+		.swiper-pagination-bullet {
+			width: 20px !important;
+			height: 20px !important;
+			margin: 0 15px 0 0 !important;
+			background: $white;
+			opacity: 1;
+			&-active {
+				border: 3px solid #54bdd9;
+			}
+			&:last-of-type {
+				margin-right: 0 !important;
+			}
+		}
+		@media (max-width: 767px) {
+			left: 0;
+			right: 0;
+			text-align: center;
+		}
+	}
+	@media (max-width: 767px) {
+		height: 300px;
+	}
+}
+.services {
+	padding: 100px 0;
+	article {
+		margin-bottom: 100px;
+		h2 {
+			display: inline-block;
+			margin-top: .3rem;
+			margin-bottom: 20px;
+			margin-left: 1rem;
+			line-height: 40px;
+			text-transform: uppercase;
+			font-family: "Gotham Ultra";
+			font-size: 30px;
+			color: $white;
+			span {
+				padding: .5rem 0;
+				background: $blue;
+				box-shadow: 1rem 0px 0px $blue, -1rem 0px 0px $blue;
+			}
+		}
+		p {
+			margin-bottom: 20px;
+			font-family: "Gotham Book";
+			font-size: 14px;
+			color: $blue;
+			strong {
+				font-family: "Gotham Ultra";
+			}
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	@media (max-width: 991px) {
+		article {
+			margin-bottom: 50px;
+			p:last-of-type {
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
