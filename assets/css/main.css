@@ -632,50 +632,65 @@ header.headerScroll .container nav ul li a span {
   box-shadow: 1rem 0px 0px #243547, -1rem 0px 0px #243547;
 }
 /* line 52, ../sass/components/_quienes-somos.scss */
+.infoUs h3 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: "Gotham Ultra";
+  font-size: 20px;
+  color: #243547;
+}
+/* line 59, ../sass/components/_quienes-somos.scss */
 .infoUs p {
   margin-bottom: 20px;
   font-family: "Gotham Book";
   font-size: 14px;
   color: #243547;
 }
-/* line 57, ../sass/components/_quienes-somos.scss */
-.infoUs p:last-of-type {
-  margin-bottom: 0;
+/* line 65, ../sass/components/_quienes-somos.scss */
+.infoUs ul {
+  padding-left: 16px;
 }
-/* line 61, ../sass/components/_quienes-somos.scss */
+/* line 67, ../sass/components/_quienes-somos.scss */
+.infoUs ul li {
+  list-style: disc;
+  font-family: "Gotham Book";
+  font-size: 14px;
+  color: #243547;
+}
+/* line 74, ../sass/components/_quienes-somos.scss */
 .infoUs img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 @media (max-width: 991px) {
-  /* line 67, ../sass/components/_quienes-somos.scss */
+  /* line 80, ../sass/components/_quienes-somos.scss */
   .infoUs h2 {
     margin-top: 50px;
   }
-  /* line 70, ../sass/components/_quienes-somos.scss */
+  /* line 83, ../sass/components/_quienes-somos.scss */
   .infoUs img {
     max-height: 300px;
   }
 }
 
-/* line 75, ../sass/components/_quienes-somos.scss */
+/* line 88, ../sass/components/_quienes-somos.scss */
 .fullGray {
   padding: 100px 0;
   background: #f9f9f9;
 }
-/* line 78, ../sass/components/_quienes-somos.scss */
+/* line 91, ../sass/components/_quienes-somos.scss */
 .fullGray .col {
   display: inline-flex;
   flex-flow: column wrap;
   padding: 0 50px;
 }
-/* line 82, ../sass/components/_quienes-somos.scss */
+/* line 95, ../sass/components/_quienes-somos.scss */
 .fullGray .col img {
   width: 80px;
   height: 100px;
 }
-/* line 86, ../sass/components/_quienes-somos.scss */
+/* line 99, ../sass/components/_quienes-somos.scss */
 .fullGray .col h2 {
   margin: 30px 0;
   text-transform: uppercase;
@@ -683,40 +698,40 @@ header.headerScroll .container nav ul li a span {
   font-size: 18px;
   color: #243547;
 }
-/* line 93, ../sass/components/_quienes-somos.scss */
+/* line 106, ../sass/components/_quienes-somos.scss */
 .fullGray .col p {
   font-family: "Gotham Book";
   font-size: 14px;
   color: #243547;
 }
 @media (max-width: 991px) {
-  /* line 100, ../sass/components/_quienes-somos.scss */
+  /* line 113, ../sass/components/_quienes-somos.scss */
   .fullGray .col {
     padding: 0;
   }
 }
 @media (max-width: 575px) {
-  /* line 105, ../sass/components/_quienes-somos.scss */
+  /* line 118, ../sass/components/_quienes-somos.scss */
   .fullGray [class*=col-xs]:nth-of-type(2) {
     margin: 50px 0;
   }
-  /* line 107, ../sass/components/_quienes-somos.scss */
+  /* line 120, ../sass/components/_quienes-somos.scss */
   .fullGray [class*=col-xs]:nth-of-type(2) .col {
     padding: 50px 0;
     border-top: 1px solid #d8d8d8;
     border-bottom: 1px solid #d8d8d8;
   }
-  /* line 111, ../sass/components/_quienes-somos.scss */
+  /* line 124, ../sass/components/_quienes-somos.scss */
   .fullGray [class*=col-xs]:nth-of-type(2) .col img {
     height: auto;
   }
 }
 
-/* line 118, ../sass/components/_quienes-somos.scss */
+/* line 131, ../sass/components/_quienes-somos.scss */
 .installations {
   padding: 100px 0;
 }
-/* line 120, ../sass/components/_quienes-somos.scss */
+/* line 133, ../sass/components/_quienes-somos.scss */
 .installations h2 {
   display: inline-block;
   margin-top: .3rem;
@@ -728,17 +743,17 @@ header.headerScroll .container nav ul li a span {
   font-size: 30px;
   color: #fff;
 }
-/* line 130, ../sass/components/_quienes-somos.scss */
+/* line 143, ../sass/components/_quienes-somos.scss */
 .installations h2 span {
   padding: .5rem 0;
   background: #243547;
   box-shadow: 1rem 0px 0px #243547, -1rem 0px 0px #243547;
 }
-/* line 136, ../sass/components/_quienes-somos.scss */
+/* line 149, ../sass/components/_quienes-somos.scss */
 .installations .swiper-button-prev {
   left: 50px;
 }
-/* line 139, ../sass/components/_quienes-somos.scss */
+/* line 152, ../sass/components/_quienes-somos.scss */
 .installations .swiper-button-next {
   right: 50px;
 }
@@ -929,31 +944,36 @@ header.headerScroll .container nav ul li a span {
   }
 }
 
-/* line 1, ../sass/components/_contacto.scss */
-.contactUs {
-  padding: 100px 0;
-  background: url("../images/bg-contacto.png");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: contain 100%;
+/* line 2, ../sass/components/_contacto.scss */
+.contactUs .imgBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -57%;
+  object-fit: cover;
 }
-/* line 7, ../sass/components/_contacto.scss */
+/* line 9, ../sass/components/_contacto.scss */
+.contactUs .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/* line 13, ../sass/components/_contacto.scss */
 .contactUs .contact {
   display: flex;
   flex-flow: column wrap;
 }
-/* line 10, ../sass/components/_contacto.scss */
+/* line 16, ../sass/components/_contacto.scss */
 .contactUs .contact .column {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
 }
-/* line 14, ../sass/components/_contacto.scss */
+/* line 20, ../sass/components/_contacto.scss */
 .contactUs .contact .column .icon {
   width: 50px;
   margin-right: 20px;
 }
-/* line 17, ../sass/components/_contacto.scss */
+/* line 23, ../sass/components/_contacto.scss */
 .contactUs .contact .column .icon i {
   width: 50px;
   height: 50px;
@@ -965,22 +985,23 @@ header.headerScroll .container nav ul li a span {
   font-size: 24px;
   color: #000;
 }
-/* line 30, ../sass/components/_contacto.scss */
+/* line 36, ../sass/components/_contacto.scss */
 .contactUs .contact .column .text a,
 .contactUs .contact .column .text p {
+  display: block;
   font-family: "Gotham Book";
   font-size: 12px;
   color: #fff;
 }
-/* line 36, ../sass/components/_contacto.scss */
+/* line 43, ../sass/components/_contacto.scss */
 .contactUs .contact .column .text a:hover {
   color: #0680b5;
 }
-/* line 40, ../sass/components/_contacto.scss */
+/* line 47, ../sass/components/_contacto.scss */
 .contactUs .contact .column:nth-of-type(2) {
   margin: 100px 0;
 }
-/* line 45, ../sass/components/_contacto.scss */
+/* line 52, ../sass/components/_contacto.scss */
 .contactUs h2 {
   display: inline-block;
   margin-top: .5rem;
@@ -991,45 +1012,71 @@ header.headerScroll .container nav ul li a span {
   font-size: 30px;
   color: #fff;
 }
-/* line 54, ../sass/components/_contacto.scss */
+/* line 61, ../sass/components/_contacto.scss */
 .contactUs h2 span {
   padding: .5rem 0;
   background: #243547;
   box-shadow: 1rem 0px 0px #243547, -1rem 0px 0px #243547;
 }
-/* line 60, ../sass/components/_contacto.scss */
+/* line 67, ../sass/components/_contacto.scss */
 .contactUs p {
   margin-bottom: 20px;
   font-family: "Gotham Book";
   font-size: 14px;
   color: #243547;
 }
-/* line 65, ../sass/components/_contacto.scss */
+/* line 72, ../sass/components/_contacto.scss */
 .contactUs p:last-of-type {
   margin-bottom: 0;
 }
-/* line 69, ../sass/components/_contacto.scss */
+/* line 76, ../sass/components/_contacto.scss */
+.contactUs .screen-reader-response {
+  display: none;
+}
+/* line 79, ../sass/components/_contacto.scss */
+.contactUs .wpcf7-not-valid-tip {
+  font-family: "Gotham Book";
+  font-size: 12px;
+  color: #0680b5;
+}
+/* line 84, ../sass/components/_contacto.scss */
+.contactUs .wpcf7-validation-errors {
+  margin-top: 20px;
+  font-family: "Gotham Book";
+  font-size: 14px;
+  color: #0680b5;
+}
+/* line 90, ../sass/components/_contacto.scss */
 .contactUs form {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   margin-top: 50px;
 }
-/* line 74, ../sass/components/_contacto.scss */
+/* line 95, ../sass/components/_contacto.scss */
 .contactUs form label {
   width: 100%;
-  padding-left: 20px;
+  margin-bottom: 0;
   text-transform: uppercase;
   font-family: "Gotham Ultra";
   font-size: 18px;
   color: #0680b5;
 }
-/* line 82, ../sass/components/_contacto.scss */
+/* line 103, ../sass/components/_contacto.scss */
+.contactUs form p {
+  width: 100%;
+}
+/* line 105, ../sass/components/_contacto.scss */
+.contactUs form p span {
+  width: 100%;
+  display: block;
+}
+/* line 110, ../sass/components/_contacto.scss */
 .contactUs form .colForm {
   width: 49%;
   margin-bottom: 50px;
 }
-/* line 85, ../sass/components/_contacto.scss */
+/* line 113, ../sass/components/_contacto.scss */
 .contactUs form .colForm input {
   width: 100%;
   padding: 10px 20px;
@@ -1040,17 +1087,16 @@ header.headerScroll .container nav ul li a span {
   font-size: 14px;
   color: #a2a2a2;
 }
-/* line 94, ../sass/components/_contacto.scss */
+/* line 122, ../sass/components/_contacto.scss */
 .contactUs form .colForm input::placeholder {
   font-family: "Gotham Book";
   font-size: 14px;
   color: #a2a2a2;
 }
-/* line 101, ../sass/components/_contacto.scss */
+/* line 129, ../sass/components/_contacto.scss */
 .contactUs form textarea {
   width: 100%;
   height: 100px;
-  margin-bottom: 50px;
   padding: 10px 20px;
   background: #f9f9f9;
   border: 0;
@@ -1060,14 +1106,38 @@ header.headerScroll .container nav ul li a span {
   font-size: 14px;
   color: #a2a2a2;
 }
-/* line 113, ../sass/components/_contacto.scss */
+/* line 140, ../sass/components/_contacto.scss */
 .contactUs form textarea::placeholder {
   font-family: "Gotham Book";
   font-size: 14px;
   color: #a2a2a2;
 }
-/* line 119, ../sass/components/_contacto.scss */
-.contactUs form button {
+/* line 146, ../sass/components/_contacto.scss */
+.contactUs form input[type=submit] {
+  display: table;
+  margin: 50px auto 0 auto;
+  padding: 10px 100px;
+  background: #fff;
+  border: 1px solid #0680b5;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gotham Ultra";
+  font-size: 14px;
+  color: #0680b5;
+  -webkit-appearance: none;
+  transition: .3s ease-in-out;
+}
+/* line 160, ../sass/components/_contacto.scss */
+.contactUs form input[type=submit]:hover {
+  background: #0680b5;
+  border: 1px solid #0680b5;
+  color: #fff;
+  transition: .3s ease-in;
+}
+/* line 168, ../sass/components/_contacto.scss */
+.contactUs .back {
+  display: table;
   margin: 0 auto;
   padding: 10px 100px;
   background: #fff;
@@ -1081,86 +1151,38 @@ header.headerScroll .container nav ul li a span {
   -webkit-appearance: none;
   transition: .3s ease-in-out;
 }
-/* line 132, ../sass/components/_contacto.scss */
-.contactUs form button:hover {
+/* line 182, ../sass/components/_contacto.scss */
+.contactUs .back:hover {
   background: #0680b5;
   border: 1px solid #0680b5;
   color: #fff;
   transition: .3s ease-in;
 }
-@media (max-width: 1600px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -10% center;
-  }
-}
-@media (max-width: 1450px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -20% center;
-  }
-}
-@media (max-width: 1350px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -30% center;
-  }
-}
-@media (max-width: 1250px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -40% center;
-  }
-}
-@media (max-width: 1200px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -50% center;
-  }
-}
-@media (max-width: 1150px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -60% center;
-  }
-}
-@media (max-width: 1100px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -70% center;
-  }
-}
-@media (max-width: 1060px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background-position: -100% center;
-  }
-}
 @media (max-width: 991px) {
-  /* line 1, ../sass/components/_contacto.scss */
-  .contactUs {
-    background: none;
+  /* line 190, ../sass/components/_contacto.scss */
+  .contactUs .imgBg {
+    display: none;
   }
-  /* line 166, ../sass/components/_contacto.scss */
+  /* line 193, ../sass/components/_contacto.scss */
   .contactUs .img {
     margin-bottom: 50px;
   }
-  /* line 168, ../sass/components/_contacto.scss */
+  /* line 195, ../sass/components/_contacto.scss */
   .contactUs .img img {
     width: 100%;
     height: 100%;
     max-height: 300px;
     object-fit: cover;
   }
-  /* line 175, ../sass/components/_contacto.scss */
+  /* line 202, ../sass/components/_contacto.scss */
   .contactUs .contact {
     margin-bottom: 50px;
   }
-  /* line 178, ../sass/components/_contacto.scss */
+  /* line 205, ../sass/components/_contacto.scss */
   .contactUs .contact .column .icon {
     width: 30px;
   }
-  /* line 180, ../sass/components/_contacto.scss */
+  /* line 207, ../sass/components/_contacto.scss */
   .contactUs .contact .column .icon i {
     width: 30px;
     height: 30px;
@@ -1168,35 +1190,35 @@ header.headerScroll .container nav ul li a span {
     font-size: 16px;
     color: #fff;
   }
-  /* line 189, ../sass/components/_contacto.scss */
+  /* line 215, ../sass/components/_contacto.scss */
+  .contactUs .contact .column .text {
+    width: 80%;
+  }
+  /* line 217, ../sass/components/_contacto.scss */
   .contactUs .contact .column .text a,
   .contactUs .contact .column .text p {
     font-size: 12px;
     color: #243547;
   }
-  /* line 195, ../sass/components/_contacto.scss */
+  /* line 223, ../sass/components/_contacto.scss */
   .contactUs .contact .column:nth-of-type(2) {
     margin: 50px 0;
   }
-  /* line 202, ../sass/components/_contacto.scss */
-  .contactUs form .colForm label {
-    padding-left: 10px;
-  }
-  /* line 205, ../sass/components/_contacto.scss */
+  /* line 230, ../sass/components/_contacto.scss */
   .contactUs form .colForm input {
     padding: 10px;
     font-size: 12px;
   }
-  /* line 208, ../sass/components/_contacto.scss */
+  /* line 233, ../sass/components/_contacto.scss */
   .contactUs form .colForm input::placeholder {
     font-size: 12px;
   }
-  /* line 213, ../sass/components/_contacto.scss */
+  /* line 238, ../sass/components/_contacto.scss */
   .contactUs form textarea {
     padding: 10px;
     font-size: 12px;
   }
-  /* line 216, ../sass/components/_contacto.scss */
+  /* line 241, ../sass/components/_contacto.scss */
   .contactUs form textarea::placeholder {
     font-size: 12px;
   }
@@ -1501,14 +1523,37 @@ header.headerScroll .container nav ul li a span {
   padding: 100px 0;
 }
 /* line 3, ../sass/components/_single-blog.scss */
+.singleBlog .wp-block-embed__wrapper {
+  width: 100%;
+  height: 0;
+  margin: 30px 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+/* line 9, ../sass/components/_single-blog.scss */
+.singleBlog .wp-block-embed__wrapper video, .singleBlog .wp-block-embed__wrapper embed, .singleBlog .wp-block-embed__wrapper iframe, .singleBlog .wp-block-embed__wrapper object {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 17, ../sass/components/_single-blog.scss */
+.singleBlog figure {
+  margin: 30px 0;
+}
+/* line 19, ../sass/components/_single-blog.scss */
+.singleBlog figure img {
+  margin: 0;
+}
+/* line 23, ../sass/components/_single-blog.scss */
 .singleBlog img {
   width: 100%;
   height: 100%;
-  max-height: 500px;
-  margin-bottom: 50px;
+  margin: 30px 0;
   object-fit: cover;
 }
-/* line 10, ../sass/components/_single-blog.scss */
+/* line 29, ../sass/components/_single-blog.scss */
 .singleBlog h1 {
   margin-bottom: 30px;
   text-transform: uppercase;
@@ -1516,18 +1561,30 @@ header.headerScroll .container nav ul li a span {
   font-size: 30px;
   color: #0680b5;
 }
-/* line 17, ../sass/components/_single-blog.scss */
+/* line 36, ../sass/components/_single-blog.scss */
 .singleBlog p {
   margin-bottom: 20px;
   font-family: "Gotham Book";
   font-size: 14px;
   color: #243547;
 }
-/* line 22, ../sass/components/_single-blog.scss */
+/* line 41, ../sass/components/_single-blog.scss */
+.singleBlog p strong {
+  font-family: "Gotham Ultra";
+}
+/* line 44, ../sass/components/_single-blog.scss */
+.singleBlog p a {
+  color: #243547;
+}
+/* line 46, ../sass/components/_single-blog.scss */
+.singleBlog p a:hover {
+  color: #0680b5;
+}
+/* line 50, ../sass/components/_single-blog.scss */
 .singleBlog p:last-of-type {
   margin-bottom: 0;
 }
-/* line 26, ../sass/components/_single-blog.scss */
+/* line 54, ../sass/components/_single-blog.scss */
 .singleBlog blockquote {
   width: 80%;
   display: block;
@@ -1539,12 +1596,6 @@ header.headerScroll .container nav ul li a span {
   font-size: 18px;
   font-style: italic;
   color: #0680b5;
-}
-@media (max-width: 991px) {
-  /* line 39, ../sass/components/_single-blog.scss */
-  .singleBlog img {
-    max-height: 300px;
-  }
 }
 
 /* line 2, ../sass/components/_aside.scss */
@@ -1660,6 +1711,40 @@ aside .relatedPosts ul li:last-of-type {
   }
 }
 
+/* line 1, ../sass/components/_404.scss */
+.error404 {
+  height: 80vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+/* line 7, ../sass/components/_404.scss */
+.error404 h1 {
+  display: block;
+  margin: 0 auto;
+  z-index: 888;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gotham Ultra";
+  font-size: 36px;
+  color: #fff;
+}
+/* line 16, ../sass/components/_404.scss */
+.error404 h1 span {
+  display: table;
+  margin: 0 auto 50px auto;
+  padding: .5rem 0;
+  background: #243547;
+  box-shadow: 1rem 0px 0px #243547, -1rem 0px 0px #243547;
+}
+/* line 24, ../sass/components/_404.scss */
+.error404 p {
+  font-family: "Gotham Book";
+  font-size: 18px;
+  color: #243547;
+}
+
 /* line 1, ../sass/components/_footer.scss */
 footer {
   display: flex;
@@ -1761,19 +1846,20 @@ footer .contact .column .icon i {
 /* line 90, ../sass/components/_footer.scss */
 footer .contact .column .text a,
 footer .contact .column .text p {
+  display: block;
   font-family: "Gotham Book";
   font-size: 12px;
   color: #fff;
 }
-/* line 96, ../sass/components/_footer.scss */
+/* line 97, ../sass/components/_footer.scss */
 footer .contact .column .text a:hover {
   color: #0680b5;
 }
-/* line 100, ../sass/components/_footer.scss */
+/* line 101, ../sass/components/_footer.scss */
 footer .contact .column:nth-of-type(2) {
   margin: 0 5%;
 }
-/* line 105, ../sass/components/_footer.scss */
+/* line 106, ../sass/components/_footer.scss */
 footer .logo {
   width: 20vw;
   height: 100%;
@@ -1785,76 +1871,99 @@ footer .logo {
   right: 0;
   background: #143356;
 }
-/* line 115, ../sass/components/_footer.scss */
+/* line 116, ../sass/components/_footer.scss */
 footer .logo img {
   height: 100px;
   filter: brightness(0) invert(1);
 }
+/* line 121, ../sass/components/_footer.scss */
+footer .copyright {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  bottom: -58px;
+  left: 0;
+  background: #0f1c2a;
+}
+/* line 129, ../sass/components/_footer.scss */
+footer .copyright p {
+  font-size: 12px;
+  color: #ccc;
+}
+/* line 132, ../sass/components/_footer.scss */
+footer .copyright p a {
+  color: #ccc;
+}
+/* line 134, ../sass/components/_footer.scss */
+footer .copyright p a:hover {
+  color: #0680b5;
+}
 @media (max-width: 1199px) {
-  /* line 123, ../sass/components/_footer.scss */
+  /* line 143, ../sass/components/_footer.scss */
   footer .contact .column .icon {
     width: 30px;
     margin-right: 10px;
   }
-  /* line 126, ../sass/components/_footer.scss */
+  /* line 146, ../sass/components/_footer.scss */
   footer .contact .column .icon i {
     width: 30px;
     height: 30px;
     font-size: 16px;
   }
-  /* line 134, ../sass/components/_footer.scss */
+  /* line 154, ../sass/components/_footer.scss */
   footer .logo {
     width: 17vw;
   }
-  /* line 136, ../sass/components/_footer.scss */
+  /* line 156, ../sass/components/_footer.scss */
   footer .logo img {
     height: 70px;
   }
 }
 @media (max-width: 991px) {
-  /* line 144, ../sass/components/_footer.scss */
+  /* line 164, ../sass/components/_footer.scss */
   footer nav ul li {
     margin-right: 30px;
   }
-  /* line 146, ../sass/components/_footer.scss */
+  /* line 166, ../sass/components/_footer.scss */
   footer nav ul li a {
     font-size: 12px;
   }
-  /* line 152, ../sass/components/_footer.scss */
+  /* line 172, ../sass/components/_footer.scss */
   footer hr {
     margin: 30px 0;
   }
-  /* line 155, ../sass/components/_footer.scss */
+  /* line 175, ../sass/components/_footer.scss */
   footer .contact {
     flex-flow: column wrap;
   }
-  /* line 157, ../sass/components/_footer.scss */
+  /* line 177, ../sass/components/_footer.scss */
   footer .contact .column {
     width: 100%;
   }
-  /* line 159, ../sass/components/_footer.scss */
+  /* line 179, ../sass/components/_footer.scss */
   footer .contact .column:nth-of-type(2) {
     margin: 30px 0;
   }
-  /* line 164, ../sass/components/_footer.scss */
+  /* line 184, ../sass/components/_footer.scss */
   footer .logo {
     width: 20vw;
   }
 }
 @media (max-width: 767px) {
-  /* line 171, ../sass/components/_footer.scss */
+  /* line 191, ../sass/components/_footer.scss */
   footer nav ul li {
     margin-right: 10px;
   }
-  /* line 174, ../sass/components/_footer.scss */
+  /* line 194, ../sass/components/_footer.scss */
   footer nav ul li a span {
     padding: 5px 15px;
   }
-  /* line 181, ../sass/components/_footer.scss */
+  /* line 201, ../sass/components/_footer.scss */
   footer .logo {
     width: 17vw;
   }
-  /* line 183, ../sass/components/_footer.scss */
+  /* line 203, ../sass/components/_footer.scss */
   footer .logo img {
     height: 50px;
   }
@@ -1864,37 +1973,37 @@ footer .logo img {
   footer {
     padding: 50px 0 150px 0;
   }
-  /* line 191, ../sass/components/_footer.scss */
+  /* line 211, ../sass/components/_footer.scss */
   footer nav ul {
     flex-flow: column wrap;
   }
-  /* line 193, ../sass/components/_footer.scss */
+  /* line 213, ../sass/components/_footer.scss */
   footer nav ul li {
     margin-right: 0;
     margin-bottom: 15px;
   }
-  /* line 199, ../sass/components/_footer.scss */
+  /* line 219, ../sass/components/_footer.scss */
   footer hr {
     width: 100%;
   }
-  /* line 203, ../sass/components/_footer.scss */
+  /* line 223, ../sass/components/_footer.scss */
   footer .contact .column {
     flex-flow: column wrap;
   }
-  /* line 205, ../sass/components/_footer.scss */
+  /* line 225, ../sass/components/_footer.scss */
   footer .contact .column .icon {
     margin-right: 0;
     margin-bottom: 10px;
   }
-  /* line 209, ../sass/components/_footer.scss */
+  /* line 229, ../sass/components/_footer.scss */
   footer .contact .column .text {
     text-align: center;
   }
-  /* line 212, ../sass/components/_footer.scss */
+  /* line 232, ../sass/components/_footer.scss */
   footer .contact .column:nth-of-type(2) {
     margin: 15px 0;
   }
-  /* line 217, ../sass/components/_footer.scss */
+  /* line 237, ../sass/components/_footer.scss */
   footer .logo {
     width: 100%;
     height: auto;
@@ -1903,24 +2012,32 @@ footer .logo img {
     bottom: 0;
     left: 0;
   }
+  /* line 245, ../sass/components/_footer.scss */
+  footer .copyright {
+    bottom: -76px;
+  }
+  /* line 247, ../sass/components/_footer.scss */
+  footer .copyright p {
+    font-size: 12px;
+  }
 }
 
 /*DEFAULT*/
-/* line 15, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* line 20, ../sass/main.scss */
+/* line 21, ../sass/main.scss */
 *:focus {
   border: none;
   box-shadow: none;
   outline: none !important;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 html,
 body {
   width: 100%;
@@ -1928,7 +2045,7 @@ body {
   background: #fff;
 }
 
-/* line 31, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 h1,
 h2,
 h3,
@@ -1939,35 +2056,35 @@ p {
   margin: 0;
 }
 
-/* line 40, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 a {
   text-decoration: none;
   transition: .3s ease-in-out;
 }
-/* line 43, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 a:hover {
   text-decoration: none;
   cursor: pointer;
   transition: .3s ease-in;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 ul {
   margin: 0;
   padding: 0;
 }
-/* line 52, ../sass/main.scss */
+/* line 53, ../sass/main.scss */
 ul li {
   list-style: none;
 }
 
-/* line 56, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 button {
   border: none;
   -webkit-appearance: none;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 img {
   width: 100%;
 }

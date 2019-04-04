@@ -1,9 +1,15 @@
 .contactUs {
-	padding: 100px 0;
-	background: url('../images/bg-contacto.png');
-	background-position: left center;
-	background-repeat: no-repeat;
-	background-size: contain 100%;
+	.imgBg {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: -57%;
+		object-fit: cover;
+	}
+	.container {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
 	.contact {
 		display: flex;
 		flex-flow: column wrap;
@@ -29,6 +35,7 @@
 			.text {
 				a,
 				p {
+					display: block;
 					font-family: "Gotham Book";
 					font-size: 12px;
 					color: $white;
@@ -66,6 +73,20 @@
 			margin-bottom: 0;
 		}
 	}
+	.screen-reader-response {
+		display: none;
+	}
+	.wpcf7-not-valid-tip {
+		font-family: "Gotham Book";
+		font-size: 12px;
+		color: $lightBlue;
+	}
+	.wpcf7-validation-errors {
+		margin-top: 20px;
+		font-family: "Gotham Book";
+		font-size: 14px;
+		color: $lightBlue;
+	}
 	form {
 		display: flex;
 		flex-flow: row wrap;
@@ -73,11 +94,18 @@
 		margin-top: 50px;
 		label {
 			width: 100%;
-			padding-left: 20px;
+			margin-bottom: 0;
 			text-transform: uppercase;
 			font-family: "Gotham Ultra";
 			font-size: 18px;
 			color: $lightBlue;
+		}
+		p {
+			width: 100%;
+			span {
+				width: 100%;
+				display: block;
+			}
 		}
 		.colForm {
 			width: 49%;
@@ -101,7 +129,6 @@
 		textarea {
 			width: 100%;
 			height: 100px;
-			margin-bottom: 50px;
 			padding: 10px 20px;
 			background: $gray;
 			border: 0;
@@ -116,8 +143,9 @@
 				color: #a2a2a2;
 			}
 		}
-		button {
-			margin: 0 auto;
+		input[type=submit] {
+			display: table;
+			margin: 50px auto 0 auto;
 			padding: 10px 100px;
 			background: $white;
 			border: 1px solid $lightBlue;
@@ -137,32 +165,31 @@
 			}
 		}
 	}
-	@media (max-width: 1600px) {
-		background-position: -10% center;
-	}
-	@media (max-width: 1450px) {
-		background-position: -20% center;
-	}
-	@media (max-width: 1350px) {
-		background-position: -30% center;
-	}
-	@media (max-width: 1250px) {
-		background-position: -40% center;
-	}
-	@media (max-width: 1200px) {
-		background-position: -50% center;
-	}
-	@media (max-width: 1150px) {
-		background-position: -60% center;
-	}
-	@media (max-width: 1100px) {
-		background-position: -70% center;
-	}
-	@media (max-width: 1060px) {
-		background-position: -100% center;
+	.back {
+		display: table;
+		margin: 0 auto;
+		padding: 10px 100px;
+		background: $white;
+		border: 1px solid $lightBlue;
+		border-radius: 20px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: "Gotham Ultra";
+		font-size: 14px;
+		color: $lightBlue;
+		-webkit-appearance: none;
+		transition: .3s ease-in-out;
+		&:hover {
+			background: $lightBlue;
+			border: 1px solid $lightBlue;
+			color: $white;
+			transition: .3s ease-in;
+		}
 	}
 	@media (max-width: 991px) {
-		background: none;
+		.imgBg {
+			display: none;
+		}
 		.img {
 			margin-bottom: 50px;
 			img {
@@ -186,6 +213,7 @@
 					}
 				}
 				.text {
+					width: 80%;
 					a,
 					p {
 						font-size: 12px;
@@ -199,9 +227,6 @@
 		}
 		form {
 			.colForm {
-				label {
-					padding-left: 10px;
-				}
 				input {
 					padding: 10px;
 					font-size: 12px;

@@ -1,10 +1,29 @@
 .singleBlog {
 	padding: 100px 0;
+	.wp-block-embed__wrapper {
+		width: 100%;
+		height: 0;
+		margin: 30px 0;
+		padding-bottom: 56.25%;
+		position: relative;
+		video, embed, iframe, object {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+	figure {
+		margin: 30px 0;
+		img {
+			margin: 0;
+		}
+	}
 	img {
 		width: 100%;
 		height: 100%;
-		max-height: 500px;
-		margin-bottom: 50px;
+		margin: 30px 0;
 		object-fit: cover;
 	}
 	h1 {
@@ -19,6 +38,15 @@
 		font-family: "Gotham Book";
 		font-size: 14px;
 		color: $blue;
+		strong {
+			font-family: "Gotham Ultra";
+		}
+		a {
+			color: $blue;
+			&:hover {
+				color: $lightBlue;
+			}
+		}
 		&:last-of-type {
 			margin-bottom: 0;
 		}
@@ -34,10 +62,5 @@
 		font-size: 18px;
 		font-style: italic;
 		color: $lightBlue;
-	}
-	@media (max-width: 991px) {
-		img {
-			max-height: 300px;
-		}
 	}
 }
